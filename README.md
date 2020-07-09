@@ -24,7 +24,7 @@ Add this to your module's `build.gradle` file
 ```gradle
 dependencies {
 	...
-	implementation 'com.amoetaz.retrofill:Retrofill:1.0.0'
+	implementation 'com.github.amoetaz:Retrofill:1.0.0'
 }
 ```
 ## Usage
