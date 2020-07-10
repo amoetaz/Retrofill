@@ -123,7 +123,7 @@ until now these some limitions
 
 
 ### Contact - Let's become friends
-- [Twitter](https://twitter.com/amoeatz)
+- [Twitter](https://twitter.com/moetaz_ashraf)
 - [Github](https://github.com/amoetaz)
 - [Facebook](https://www.facebook.com/amotaz)
 
@@ -131,7 +131,7 @@ until now these some limitions
 Don't forget to star ⭐ the repo
 </p>
 
-For [Twitter](https://twitter.com/amoeatz) version click here
+
 
 ## License
 
