@@ -3,6 +3,8 @@
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=19)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
+### [Kotlin version](https://github.com/amoetaz/Retrofill-KT)
+
 
 ## Prerequisites
 
@@ -39,7 +41,7 @@ new Retrofill(this).setupNormalList(recyclerView, R.layout.list_item, new Action
             }
         }).showNormalRecylerView();
 ```
-That is it,and as shown here there are 3 parameters passed to `setupNormalList` method the recyclerView as a view and ,and layout item and the last one is a listener
+That is it,and as shown here there are 3 parameters passed to `setupNormalList` method the recyclerView as a view , layout item and the last one is a listener
 if you want to add clicks on items list if you don't want so just pass it with null like that
 
 ``` java
@@ -102,6 +104,24 @@ new Retrofill(this)
 ```
 
 
+## Limitations
+Of course there are some limitaions if you will use this lib but in next version I will try work around them
+until now these some limitions
+* You can`t add click to specific view on list item but you can add click to whole item 
+* Custom layout manager is not supported you can only choose form build-in layout manager in android 
+* The list items will be identcal as in the xml for example if there is a textview with id tv_text and you set it text in xml with "Hello" so all textviews in other items with id tv_text in run will display with "Hello"
+
+## Notes
+1-You can pass layout type to setter LayoutType methods from one of these
+* LayoutType.LINEAR
+* LayoutType.GRID
+* LayoutType.STAGGERED_GRID
+
+2- You must initiate your views in list item in xml and `DON'T` use tools namespace instead use android
+
+3- You should check your xml list item to make sure it is properly suitable with your layout type for example if your layout type is linear sometimes it is better to set the hegiht of parent of list item with wrap content
+
+
 ### Contact - Let's become friends
 - [Twitter](https://twitter.com/amoeatz)
 - [Github](https://github.com/amoetaz)
@@ -111,22 +131,7 @@ new Retrofill(this)
 Don't forget to star ⭐ the repo
 </p>
 
-## Limitation
-Of course there are some limitaions if you will use this lib but in next version I will try work around them
-until now these some limitions
-* You can`t add click to specific view on list item but you can add click to whole item 
-* Custom layout manager is not supported you can only choose form build-in layout manager in android 
-* The list items will be identcal as in the xml for example if there is a textview with id tv_text and you set it text in xml with "Hello" so all textviews in other items with id tv_text in run will display with "Hello"
-
-## Notes
-1-You can pass layout type to setter LayoutType method form one of these
-* LayoutType.LINEAR
-* LayoutType.GRID
-* LayoutType.STAGGERED_GRID
-
-2- You initiate your views in list item in xml and `DON'T` use tools namespace instead use android
-
-3- You should check your xml list item to make sure it is properly suitable with your layout type for example if your layout type is linear sometimes it is better to set the hegiht of parent of list item with wrap content
+For [Twitter](https://twitter.com/amoeatz) version click here
 
 ## License
 
